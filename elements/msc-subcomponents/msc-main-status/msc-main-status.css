@@ -1,0 +1,25 @@
+
+.mainStatus {
+
+}
+
+.blocks { margin-top: 5px; margin-bottom: 2px; }
+
+#lastBlock {
+    float: left;
+}
+
+#blockNumber {
+    margin-right: 10px;
+}
+
+#chainVersion {}
+
+.syncStatus {}
+
+.syncStatus div {
+    float: left;
+}
+
+#peers { justify-content: unset }
+
