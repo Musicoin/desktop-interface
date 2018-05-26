@@ -44,9 +44,9 @@
       <div id="mid_right_col">     
       <table class="acct border_bottom">
         <tr>
-          <th id="th_acc">Account</th>
-          <th id="th_bal">Balance</th>
-          <th id="th_act">Actions</th>
+          <th id="th_acc">{{echo('profileViewHtml_Table_ACCOUNT')}}</th>
+          <th id="th_bal">{{echo('profileViewHtml_Table_ACTIONS')}}</th>
+          <th id="th_act">{{echo('profileViewHtml_Table_BALANCE_IN')}}</th>
         </tr>
         <template is="dom-repeat" items="[[accounts]]" as="account">
           <tr>
@@ -61,11 +61,11 @@
             </td>
             <td class="account-act">
               
-              
-              <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow" style="left: -20px;"></iron-icon>
-              <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount" style="left: 0px;"></iron-icon>
-              <iron-icon icon="icons:text-format" class=clickable title={{echo('profileViewHtml_Sign')}} on-tap="signMsg" style="left: 20px;"></iron-icon>
+              <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow"></iron-icon>
+              <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount"></iron-icon>
+              <iron-icon icon="icons:text-format" class=clickable title={{echo('profileViewHtml_Sign')}} on-tap="signMsg"></iron-icon>
               <input id=fileDialogBackup-[[account.address]] type="file" nwdirectory style="display: none;">
+
             </td>
           </tr>
         </template>
