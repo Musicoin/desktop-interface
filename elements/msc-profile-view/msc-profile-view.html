@@ -9,11 +9,11 @@
       </div>
       <button onclick="activeTabs(event, 'wallet')" id="defaultOpen">
         <img src="/interface/images/icons/wallet.png" />
-        <span class="left_col_btn_txt">Wallet</span>
+        <span class="left_col_btn_txt">{{echo('profileViewHtml_Tab_Wallet')}}</span>
       </button>
       <button onclick="activeTabs(event, 'pMusic')">
         <img src="/interface/images/icons/play_music.png" />
-        <span class="left_col_btn_txt">Play Music</span>
+        <span class="left_col_btn_txt">{{echo('profileViewHtml_Tab_Play_Music')}}</span>
       </button>
       <div id="footer_left">
         <div id="left_footer_buttons">
@@ -33,9 +33,9 @@
       </div>
     </div>
     <div id="right_col">
-      <div id="wallet_text"><h2>Wallet</h2></div>
+      <div id="wallet_text"><h2>{{echo('profileViewHtml_Tab_Wallet')}}</h2></div>
         <div id="bal_in_sel">
-          <span id="bal_in_txt">Show balance in: </span>
+          <span id="bal_in_txt">{{echo('profileViewHtml_Show_Account_In_Explorer')}}</span>
           <img src="/interface/images/icons/musicoin.svg" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_MUSIC')}} on-tap="displayBalanceInMusic" />
           <img src="/interface/images/icons/bitcoin.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_BTC')}} on-tap="displayBalanceInBtc" />
           <img src="/interface/images/icons/dollar.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_USD')}} on-tap="displayBalanceInUsd" />
@@ -74,10 +74,16 @@
       <div id="more_accounts">
       <center>
         <h2 class="more_accts">Need more accounts?</h2>
-        <paper-button raised on-tap="createNewAccountDialog" id="new-account">Add account</paper-button>
+        <paper-button raised on-tap="createNewAccountDialog" id="new-account">
+          {{echo('profileViewHtml_Btn_NEW_ACCOUNT')}}
+        </paper-button>
         <input id="fileDialog" type="file" style="display: none;" />
-        <paper-button raised on-tap="importAny" id="old-wallet">Import Account</paper-button>
-        <paper-button raised on-tap="showSendDialog" id="send-funds">Send Funds</paper-button>
+        <paper-button raised on-tap="importAny" id="old-wallet">
+          {{echo('profileViewHtml_Btn_IMPORT_ACCOUNT')}}
+        </paper-button>
+        <paper-button raised on-tap="showSendDialog" id="send-funds">
+          {{echo('profileViewHtml_Btn_SEND_FUNDS')}}
+        </paper-button>
       </center>
       </div>
       <div id="footer_right">
