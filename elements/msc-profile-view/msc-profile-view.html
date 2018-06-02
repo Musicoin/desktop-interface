@@ -35,7 +35,7 @@
     <div id="right_col">
       <div id="wallet_text"><h2>{{echo('profileViewHtml_Tab_Wallet')}}</h2></div>
         <div id="bal_in_sel">
-          <span id="bal_in_txt">{{echo('profileViewHtml_Show_Account_In_Explorer')}}</span>
+          <span id="bal_in_txt">{{echo('profileViewHtml_Table_BALANCE_IN')}}</span>
           <img src="/interface/images/icons/musicoin.svg" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_MUSIC')}} on-tap="displayBalanceInMusic" />
           <img src="/interface/images/icons/bitcoin.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_BTC')}} on-tap="displayBalanceInBtc" />
           <img src="/interface/images/icons/dollar.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_USD')}} on-tap="displayBalanceInUsd" />
@@ -45,8 +45,8 @@
       <table class="acct border_bottom">
         <tr>
           <th id="th_acc">{{echo('profileViewHtml_Table_ACCOUNT')}}</th>
-          <th id="th_bal">{{echo('profileViewHtml_Table_ACTIONS')}}</th>
-          <th id="th_act">{{echo('profileViewHtml_Table_BALANCE_IN')}}</th>
+          <th id="th_bal">{{echo('profileViewHtml_Table_BALANCE_IN')}}</th>
+          <th id="th_act">{{echo('profileViewHtml_Table_ACTIONS')}}</th>
         </tr>
         <template is="dom-repeat" items="[[accounts]]" as="account">
           <tr>

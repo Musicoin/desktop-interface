@@ -1,6 +1,6 @@
-.swo
-.swp
-interface/bower_components/
+*.swo
+*.swp
+/bower_components/
 nohup.out
 npm-debug.log
 runwatched.sh

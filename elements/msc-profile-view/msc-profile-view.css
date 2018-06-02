@@ -4,6 +4,11 @@
   display: table;
 }
 
+.flexbox_typ{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 *{
   font-family: 'Lato', sans-serif;
 }
@@ -61,7 +66,6 @@ h2{
 }
 
 .account-address {
-  float: right;
   font-size: 14px;
   color: #b0b1b3;
   padding-left:10px;
@@ -107,9 +111,12 @@ tr.border_bottom td {
   border-bottom:1pt solid #5d5f63;
 }
 
-#footer_left, #footer_right{
+#footer_left{
   position: absolute;
   bottom: 30px;
+}
+
+#footer_left, #footer_right{
   color: #46494e;
   font-size: 11px;
 }
@@ -143,7 +150,6 @@ tr.border_bottom td {
 
 #mid_right_col{
   clear: both;
-  width: inherit;
   height: auto;
   position: static;
 }
@@ -185,10 +191,6 @@ h2.more_accounts{
 
 #left_footer_buttons button.active {
   background-color: #f2c455;
-}
-
-#footer_right{
-  text-align: center;
 }
 
 .title {
