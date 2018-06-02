@@ -1,3 +1,9 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 *{
   font-family: 'Lato', sans-serif;
 }
