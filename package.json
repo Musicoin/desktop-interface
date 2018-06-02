@@ -7,7 +7,7 @@
     "build": "bower-installer -p",
     "install": "bower-installer -p",
     "test": "yarn build"
-  }
+  },
   "dependencies": {
     "bower-installer": "1.3.6"
   }
