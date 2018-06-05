@@ -4,8 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "install": "yarn bower-installer -p",
-    "test": "echo 'No tests yet.'"
+    "build": "bower-installer -p",
+    "install": "bower-installer -p",
+    "test": "yarn build"
   },
   "dependencies": {
     "bower-installer": "1.3.6"
