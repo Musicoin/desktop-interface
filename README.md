@@ -1,12 +1,25 @@
 ![Travis](https://img.shields.io/travis/etaletai13/interface.svg?style=for-the-badge)
 ![GitHub release](https://img.shields.io/github/release/etaletai13/interface.svg?style=for-the-badge)
 
-# interface
-Default UX Module for https://github.com/Musicoin/desktop
+# desktop-interface
+Default UX Module for [Musicoin Desktop Client](https://github.com/Musicoin/desktop)
 
-## Getting Started
-This *should* work... (**NOTE**: you may want to use the [offical](https://github.com/Musicoin/desktop) or [etaletai13's](https://github.com/etaletai13/desktop]) fork of the desktop repo instead of mine)
+## Using
+First, clone the main desktop codebase 
+'git clone git@github.com/Musicoin/desktop.git'
 
-This module can be included in the desktop package.json.
+Then, in the same directory containing 'desktop', clone this reposistory 
+'git clone git@github.com:movingelectrons/desktop-interface.git'
 
+Remove the line regarding 'interface' under 'dependicies' in 'package.json'
+
+Then you can finally
+'''
+cd desktop && yarn add ../desktop-interface && yarn debug
+'''
+
+At this point the desktop client should popup and run.  From here on out you should be able to run 'yarn debug' to see the desktop client in action.
+
+## Screenshot 
+**Note**: *may be slightly out of date*
 ![http://srandd.com/mc_desktop_snap.png](http://srandd.com/mc_desktop_snap.png)
