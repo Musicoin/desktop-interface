@@ -44,22 +44,22 @@
       <div id="mid_right_col" class="clearfix">     
       <table class="acct border_bottom">
         <tr>
-          <th id="th_acc">{{echo('profileViewHtml_Table_ACCOUNT')}}</th>
-          <th id="th_bal">{{echo('profileViewHtml_Table_BALANCE_IN')}}</th>
-          <th id="th_act">{{echo('profileViewHtml_Table_ACTIONS')}}</th>
+          <th class="th_acc">{{echo('profileViewHtml_Table_ACCOUNT')}}</th>
+          <th class="th_bal">{{echo('profileViewHtml_Table_BALANCE_IN')}}</th>
+          <th class="th_act">{{echo('profileViewHtml_Table_ACTIONS')}}</th>
         </tr>
         <template is="dom-repeat" items="[[accounts]]" as="account">
           <tr>
-            <td>
+            <td class="td_acc">
               <img src=[[account.avatar]] title=[[account.address]] class="avatar" width="48" on-tap="showAccountDetails">
               <p class="account-address">[[account.address]]</p>
             </td>
-            <td class="account-bal">
+            <td class="account-bal th_bal">
               <div class="account-music" id=[[account.address]] title="[[account.balance]]"> [[account.displayBalance]] MC</div>
               <div class="account-btc" style="display: none;" title="[[account.balance]]"> [[account.displayBalanceBtc]]</div>
               <div class="account-usd" style="display: none;" title="[[account.balance]]"> [[account.displayBalanceUsd]]</div>
             </td>
-            <td class="account-act">
+            <td class="account-act th_act">
               
               <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow"></iron-icon>
               <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount"></iron-icon>

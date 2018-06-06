@@ -1,7 +1,7 @@
 <dom-module id="msc-main-status">
   <link rel="import" type="css" href="msc-main-status.css">
   <template>
-    <div class="container">
+    <div id="bottom_status_elements" class="container">
       <div class="mainStatus blocks">
         <div id="lastBlock" class="item-area time-area" title="{{_computeTimeSinceLastBlockMessage(syncStatus)}}{{echo('mainStatusHtml_since_last_block')}}">
           {{_computeTimeSinceLastBlockMessage(syncStatus)}}
