@@ -4,5 +4,7 @@
   flex-wrap: nowrap;
 }
 
-#peers { justify-content: unset }
+#peers, .syncStatus {
+  margin-left: 20px;
+}
 
