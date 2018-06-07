@@ -1,8 +1,7 @@
-os:
-  - osx
-osx_image: xcode9.3
+os: linux
 language: node_js
+cache: yarn
 yarn:
-  - "1.6.0"
+  - "1.7.0"
 node_js:
   - "8.0.0"
