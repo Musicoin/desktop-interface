@@ -26,7 +26,7 @@
     "streaming"
   ],
   "scripts": {
-    "build": "yarn bower-installer -rp",
+    "build": "yarn bower-installer",
     "test": "yarn build",
     "postinstall": "yarn build"
   },
