@@ -16,5 +16,4 @@ Default UX Module for [Musicoin Desktop Client](https://github.com/Musicoin/desk
 At this point the desktop client should popup and run.  From here on out you should be able to run 'yarn debug' to see the desktop client in action.
 
 ## Screenshot 
-**Note**: *may be slightly out of date*
-![http://srandd.com/mc_desktop_snap.png](http://srandd.com/mc_desktop_snap.png)
+![https://spee.ch/d/v1-5-0.png](https://spee.ch/d/v1-5-0.png)
