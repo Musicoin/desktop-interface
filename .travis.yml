@@ -9,19 +9,5 @@ go: 1.10.0
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.7.0
 - export PATH="$HOME/.yarn/bin:$PATH"
-- echo -n | openssl s_client -connect https://scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 install:
 - yarn --link-duplicates
-env:
-  global:
-   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-   #   via the "travis encrypt" command using the project repo's public key
-   - secure: "LJwZQoyz6bV70VlbcMIIHQ0SzI9/HMP9Eoy+K6XWIKBAajjZhRQ9M3p+lGiFbYyMe5U1KQMSJypLod30WLG4zutMYfaWAVaiWuip3FqZVC/0EnGIEHsfk7J2EdEQojPITQDf/jLz+TfNgHO68N0wV2J1z1gWLOP5Gpd7exf/8KOeU77rDlPBNVJGFf0S6fJvdJwWS+MIm/hHKw7w7VnmpG9bKhd+EPTllLg0UGrEwqxZPs0Pg2/rVs9aTiMVmW0YARKP9CTp+JpM1oqb9r3x4s5MgxXDGbVLrQHpVgL0m3n+MYNmBr/mkmdE6W68oETM+/HTtA/rXSR1Urn6SGaeu5pk3c5/jUMxCGUrIMycmm1WaUh5KZbPH2tkIUZCWeUVqeMWDB+H9yW9ASQaRUs6ayIkYOgCwHvyA/YzrR66m4x56fce7ChclTXWfVmw+7RDZ6KXkBkpSfb1cfxYkDHR5gFlixCtpD97RcChJrP6QopVA46WoV+HPogmv3aeUixxpVmgzkrAo16r+Tf3+SlWouHjAvn6/zEqp4e0clWuP3vCJbcBFIEMZ/dTHBpf45ja4KQ2htP5JC98sPmtO+AKLbNsSuKaP+gpcqZ2EExinxK9HefOHt3qQ4DXseiffwEpDIo7KDHWSJMkTXLitSE1djliCG01ib5hZFNT5UxfdQo="
-addons:
-  coverity_scan:
-    project:
-      name: "etaletai13/desktop-interface"
-      description: "Interface module for Musicoin Desktop"
-    notification_email: 13@etaletai.com
-    build_command: "yarn --link-duplicates"
-    branch_pattern: staging
