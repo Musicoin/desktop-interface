@@ -1,4 +1,5 @@
-![Travis](https://img.shields.io/travis/Desktop/interface.svg?style=for-the-badge)
+
+[![Travis](https://img.shields.io/travis/etaletai13/desktop-interface.svg?style=for-the-badge)](https://github.com/Musicoin/desktop-interface)
 
 # Musicoin Desktop - Interface Module
 Default UX Module for [Musicoin Desktop Client](https://github.com/Musicoin/desktop)
