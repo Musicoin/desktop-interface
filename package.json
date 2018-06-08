@@ -9,6 +9,9 @@
     "mail": "13@etaletai.com",
     "web": "https://github.com/Musicoin/desktop-interface/issues"
   },
+  "engines": {
+    "yarn": ">=1.5.0"
+  },
   "issues": "https://github.com/Musicoin/desktop-interface/issues",
   "repository": {
     "type": "git",
