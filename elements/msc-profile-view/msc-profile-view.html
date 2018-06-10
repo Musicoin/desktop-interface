@@ -55,17 +55,19 @@
               <p class="account-address">[[account.address]]</p>
             </td>
             <td class="account-bal th_bal">
-              <div class="account-music" id=[[account.address]] title="[[account.balance]]"> [[account.displayBalance]] MC</div>
-              <div class="account-btc" style="display: none;" title="[[account.balance]]"> [[account.displayBalanceBtc]]</div>
-              <div class="account-usd" style="display: none;" title="[[account.balance]]"> [[account.displayBalanceUsd]]</div>
+              <p>
+                <div class="account-music" id=[[account.address]] title="[[account.balance]]"> [[account.displayBalance]] MC</div>
+                <div class="account-btc" style="display: none;" title="[[account.balance]]"> [[account.displayBalanceBtc]]</div>
+                <div class="account-usd" style="display: none;" title="[[account.balance]]"> [[account.displayBalanceUsd]]</div>
+              </p>
             </td>
             <td class="account-act th_act">
-              
-              <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow"></iron-icon>
-              <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount"></iron-icon>
-              <iron-icon icon="icons:text-format" class=clickable title={{echo('profileViewHtml_Sign')}} on-tap="signMsg"></iron-icon>
-              <input id=fileDialogBackup-[[account.address]] type="file" nwdirectory style="display: none;">
-
+              <p>
+                <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow"></iron-icon>
+                <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount"></iron-icon>
+                <iron-icon icon="icons:text-format" class=clickable title={{echo('profileViewHtml_Sign')}} on-tap="signMsg"></iron-icon>
+                <input id=fileDialogBackup-[[account.address]] type="file" nwdirectory style="display: none;">
+              </p>
             </td>
           </tr>
         </template>

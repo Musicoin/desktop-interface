@@ -80,11 +80,11 @@ h2{
 }
 
 .th_bal{
-  width: 25%;
+  width: 28%;
 }
 
 .th_act{
-  width: 15%;
+  width: 12%;
 }
 
 #th_act, .account-act, #th_bal, .account-music, .account-btc, .account-usd{
@@ -109,7 +109,7 @@ table.acct th{
 }
 
 table.border_bottom tr {
-  border-bottom:1pt solid #5d5f63 !important;
+  border-bottom:1pt solid #46494e !important;
   display: flex;
 }
 
@@ -135,6 +135,14 @@ p.account-address{
   background-color: #2b2e34;
 }
 
+#left_footer_buttons button{
+  padding: 0px;
+}
+
+#maximize img{
+  height: 23px;
+}
+
 #wallet_text{
   width:auto;
   height:auto;
@@ -149,13 +157,15 @@ p.account-address{
 }
 
 #bal_in_sel img{
-  width:24px; 
-  margin-left: 12px;
+  width:18px; 
+  margin-left: 6px;
 }
 
 #bal_in_txt{
   color: #5d5f63;
-  font-size: 12px;
+  font-size: 14px;
+  position: relative;
+  top: -3px;
 }
 
 #mid_right_col{
