@@ -1244,11 +1244,11 @@ Polymer({
 
 			$(function() {
 
-				var dd = new DropDown( $('#dd') );
+				var dd = new DropDown( $('#bal_in_sel') );
 
 				$(document).click(function() {
 					// all dropdowns
-					$('.wrapper-dropdown-3').removeClass('active');
+					$('.wrapper-dropdown').removeClass('active');
 				});
 
 			});

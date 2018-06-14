@@ -36,24 +36,26 @@
     <div id="right_col">
       <div id="wallet_text"><h2>{{echo('profileViewHtml_Tab_Wallet')}}</h2></div>
 
+      <div id="bal_in_sel_wrapper">
+        <span id="bal_in_txt">{{echo('profileViewHtml_Table_BALANCE_IN')}}</span>
+        <div id="bal_in_sel">
+	        <span></span>
+	        <ul class="dropdown">
+		        <li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
+		        <li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
+		        <li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+	        </ul>
+        </div>
+      </div>
 
-<div id="dd" class="wrapper-dropdown-3" tabindex="1">
-	<span>Transport</span>
-	<ul class="dropdown">
-		<li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
-		<li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
-		<li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
-	</ul>
-</div>
-
-
+<!--
         <div id="bal_in_sel">
           <span id="bal_in_txt">{{echo('profileViewHtml_Table_BALANCE_IN')}}</span>
           <img src="/interface/images/icons/musicoin.svg" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_MUSIC')}} on-tap="displayBalanceInMusic" />
           <img src="/interface/images/icons/bitcoin.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_BTC')}} on-tap="displayBalanceInBtc" />
           <img src="/interface/images/icons/dollar.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_USD')}} on-tap="displayBalanceInUsd" />
           <img src="/interface/images/icons/mark.png" class="clickable" title={{echo('profileViewHtml_Market_Conversion_Rates')}} on-tap="marketRates" />
-        </div>
+        </div> -->
       <div id="mid_right_col" class="clearfix">     
       <table class="acct border_bottom">
         <tr>
@@ -76,6 +78,17 @@
             </td>
             <td class="account-act th_act">
               <p>
+
+<div class="wrapper-dropdown">
+	<span>&nbsp;</span>
+	<ul class="dropdown">
+		<li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
+		<li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
+		<li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+	</ul>
+</div>
+
+
                 <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow"></iron-icon>
                 <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount"></iron-icon>
                 <iron-icon icon="icons:text-format" class=clickable title={{echo('profileViewHtml_Sign')}} on-tap="signMsg"></iron-icon>

@@ -149,25 +149,6 @@ p.account-address{
   float:left;
 }
 
-#bal_in_sel{
-  padding-top:10px;
-  width:auto;
-  height:auto;
-  float:right;
-}
-
-#bal_in_sel img{
-  width:18px; 
-  margin-left: 6px;
-}
-
-#bal_in_txt{
-  color: #5d5f63;
-  font-size: 14px;
-  position: relative;
-  top: -3px;
-}
-
 #mid_right_col{
   clear: both;
   height: auto;
@@ -201,29 +182,41 @@ h2.more_accounts{
   background-color: #f2c455;
 }
 
-/* DEMO 3 */
-
-.wrapper-dropdown-3 {
-    /* Size and position */
+#bal_in_sel_wrapper{
+  float:right;
+}
+#bal_in_txt{
+  float:left;
+  color: #5d5f63;
+  font-size: 14px;
+  position: relative;
+  top: -3px;
+}
+#bal_in_sel{
+  float:right;
+  padding-top:10px;
+  width:auto;
+  height:auto;
+}
+#bal_in_sel img{
+  width:18px; 
+  margin-left: 6px;
+}
+#bal_in_sel {
     position: relative;
-    width: 200px;
+    width: 150px;
     margin: 0 auto;
     padding: 10px;
-
-    /* Styles */
     background: #fff;
     border-radius: 7px;
     border: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 1px 1px rgba(50,50,50,0.1);
     cursor: pointer;
     outline: none;
-
-    /* Font settings */
     font-weight: bold;
     color: #8AA8BD;
 }
-
-.wrapper-dropdown-3:after {
+#bal_in_sel:after {
     content: "";
     width: 0;
     height: 0;
@@ -235,15 +228,11 @@ h2.more_accounts{
     border-style: solid;
     border-color: #8aa8bd transparent;
 }
-
-.wrapper-dropdown-3 .dropdown {
-  /* Size & position */
+#bal_in_sel .dropdown {
     position: absolute;
     top: 140%;
     left: 0;
     right: 0;
-
-    /* Styles */
     background: white;
     border-radius: inherit;
     border: 1px solid rgba(0,0,0,0.17);
@@ -251,13 +240,10 @@ h2.more_accounts{
     font-weight: normal;
     transition: all 0.5s ease-in;
     list-style: none;
-
-    /* Hiding */
     opacity: 0;
     pointer-events: none;
 }
-
-.wrapper-dropdown-3 .dropdown:after {
+#bal_in_sel .dropdown:after {
     content: "";
     width: 0;
     height: 0;
@@ -268,8 +254,7 @@ h2.more_accounts{
     border-style: solid;
     border-color: #fff transparent;    
 }
-
-.wrapper-dropdown-3 .dropdown:before {
+#bal_in_sel .dropdown:before {
     content: "";
     width: 0;
     height: 0;
@@ -280,8 +265,7 @@ h2.more_accounts{
     border-style: solid;
     border-color: rgba(0,0,0,0.1) transparent;    
 }
-
-.wrapper-dropdown-3 .dropdown li a {
+#bal_in_sel .dropdown li a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -290,35 +274,120 @@ h2.more_accounts{
     box-shadow: inset 0 1px 0 rgba(255,255,255,1);
     transition: all 0.3s ease-out;
 }
-
-.wrapper-dropdown-3 .dropdown li i {
+#bal_in_sel .dropdown li i {
     float: right;
     color: inherit;
 }
-
-.wrapper-dropdown-3 .dropdown li:first-of-type a {
+#bal_in_sel .dropdown li:first-of-type a {
     border-radius: 7px 7px 0 0;
 }
-
-.wrapper-dropdown-3 .dropdown li:last-of-type a {
+#bal_in_sel .dropdown li:last-of-type a {
     border: none;
     border-radius: 0 0 7px 7px;
 }
-
 /* Hover state */
-
-.wrapper-dropdown-3 .dropdown li:hover a {
+#bal_in_sel .dropdown li:hover a {
     background: #f3f8f8;
 }
-
 /* Active state */
-
-.wrapper-dropdown-3.active .dropdown {
+#bal_in_sel.active .dropdown {
     opacity: 1;
     pointer-events: auto;
 }
 /* end demo 3 */
-
+.wrapper-dropdown {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    color: #8AA8BD;
+}
+.wrapper-dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #8aa8bd transparent;
+}
+.wrapper-dropdown .dropdown {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: inherit;
+    border: 1px solid rgba(0,0,0,0.17);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-weight: normal;
+    transition: all 0.5s ease-in;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.wrapper-dropdown .dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 15px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #fff transparent;    
+}
+.wrapper-dropdown .dropdown:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 13px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;    
+}
+.wrapper-dropdown .dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #8aa8bd;
+    border-bottom: 1px solid #e6e8ea;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    transition: all 0.3s ease-out;
+}
+.wrapper-dropdown .dropdown li i {
+    float: right;
+    color: inherit;
+}
+.wrapper-dropdown .dropdown li:first-of-type a {
+    border-radius: 7px 7px 0 0;
+}
+.wrapper-dropdown .dropdown li:last-of-type a {
+    border: none;
+    border-radius: 0 0 7px 7px;
+}
+/* Hover state */
+.wrapper-dropdown .dropdown li:hover a {
+    background: #f3f8f8;
+}
+/* Active state */
+.wrapper-dropdown.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* end other fance dd */
 
 .title {
   font-size: 48px;
