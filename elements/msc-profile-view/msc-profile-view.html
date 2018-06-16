@@ -97,12 +97,28 @@
             <td class="account-act th_act">
               <p>
 
+
               <div class="wrapper-dropdown">
                 <span>&#8942;</span>
                 <ul class="dropdown">
-                  <li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
-                  <li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
-                  <li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+                  <li>
+                    <span on-tap="displayBalanceInBtc">
+                      <img src="/interface/images/icons/bitcoin.png" class="clickable" />
+                      <span>Show in explorer*</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span on-tap="displayBalanceInUsd">
+                      <img src="/interface/images/icons/dollar.png" class="clickable" />
+                      <span>Backup account*</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span on-tap="displayBalanceInMusic">
+                      <img src="/interface/images/icons/musicoin.svg" class="clickable" />
+                      <span>Sign*</span>
+                    </span>
+                  </li>
                 </ul>
               </div>
 
