@@ -1267,20 +1267,15 @@ DropDown2.prototype = {
 
 $(function() {
   var dd1 = new DropDown( $('#bal_in_sel') );
-  var dds = new DropDown2( $('.wrapper-dropdown') );
+//FIXME:run this _after_ accounts are loaded and drawn into the UI, properly, 
+//this is really just a hack..
+  setTimeout(function(){ 
+    var dds = new DropDown2( $('.wrapper-dropdown') );
+  }, 1000); 
+//end FIXME
   $(document).click(function() {
     // all dropdowns
     //$('.wrapper-dropdown').removeClass('active'); //is this even necessary?
   });
-/*
-  var dds = document.getElementsByClassName('wrapper-dropdown');
-  for (var i=0;i<dds.length;i+=1){
-    obj.dds[i].on('click', function(event){
-      $(dds[i]).toggleClass('active');
-      return false;
-    });
-
-  }
-*/
 });
 

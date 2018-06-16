@@ -95,37 +95,35 @@
               </p>
             </td>
             <td class="account-act th_act">
-              <p>
-
-
-              <div class="wrapper-dropdown">
-                <span>&#8942;</span>
-                <ul class="dropdown">
-                  <li>
-                    <span on-tap="displayBalanceInBtc">
-                      <img src="/interface/images/icons/bitcoin.png" class="clickable" />
-                      <span>Show in explorer*</span>
-                    </span>
-                  </li>
-                  <li>
-                    <span on-tap="displayBalanceInUsd">
-                      <img src="/interface/images/icons/dollar.png" class="clickable" />
-                      <span>Backup account*</span>
-                    </span>
-                  </li>
-                  <li>
-                    <span on-tap="displayBalanceInMusic">
-                      <img src="/interface/images/icons/musicoin.svg" class="clickable" />
-                      <span>Sign*</span>
-                    </span>
-                  </li>
-                </ul>
+              <p class="account-act-p">
+              <div class="flexbox_typ">
+                <span class="text-icon">&#43;</span>
+                <span class="text-icon">&minus;</span>
+                <div class="wrapper-dropdown">
+                  <span class="text-icon">&#8942;</span>
+                  <ul class="dropdown">
+                    <li>
+                      <span on-tap="showExplorerWindow">
+                        <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}}></iron-icon>
+                        <span>{{echo('profileViewHtml_Show_in_Explorer')}}</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span on-tap="backupAccount">
+                        <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}}></iron-icon>
+                        <span>{{echo('profileViewHtml_Backup_Account')}}</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span on-tap="signMsg">
+                        <iron-icon icon="icons:text-format" class=clickable title={{echo('profileViewHtml_Sign')}}></iron-icon>
+                        <input id=fileDialogBackup-[[account.address]] type="file" nwdirectory style="display: none;">
+                        <span>{{echo('profileViewHtml_Sign')}}</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-                <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow"></iron-icon>
-                <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount"></iron-icon>
-                <iron-icon icon="icons:text-format" class=clickable title={{echo('profileViewHtml_Sign')}} on-tap="signMsg"></iron-icon>
-                <input id=fileDialogBackup-[[account.address]] type="file" nwdirectory style="display: none;">
               </p>
             </td>
           </tr>

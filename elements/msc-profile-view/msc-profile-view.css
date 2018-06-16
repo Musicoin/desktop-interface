@@ -305,11 +305,12 @@ span.bal_in_sel_dd_text{
 }
 
 .wrapper-dropdown {
-  background-color: white;
   position: relative;
-  margin: 0 auto;
   cursor: pointer;
   font-weight: bold;
+}
+.text-icon{
+  font-size: 20px;
 }
 .wrapper-dropdown:after {
   width: 0;
@@ -323,17 +324,23 @@ span.bal_in_sel_dd_text{
   border-color: #8aa8bd transparent;
 }
 .wrapper-dropdown .dropdown {
+  color: #7D8080;
   position: absolute;
   top: 140%;
-  left: 0;
+  left: -100px;
   right: 0;
-  background: white;
-  border-radius: inherit;
+  background: #343C41;
+  border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.17);
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   font-weight: normal;
   transition: all 0.5s ease-in;
   list-style: none;
+  list-style-type: none;
+  padding: 18px 18px 8px 18px;
+  margin: 0;
+  width: 130px;
+  z-index: 1;
   opacity: 0;
   pointer-events: none;
 }
@@ -343,10 +350,10 @@ span.bal_in_sel_dd_text{
   height: 0;
   position: absolute;
   bottom: 100%;
-  right: 15px;
+  right: 51px;
   border-width: 0 6px 6px 6px;
   border-style: solid;
-  border-color: #fff transparent;    
+  border-color: #343C41 transparent;    
 }
 .wrapper-dropdown .dropdown:before {
   content: "";
@@ -354,10 +361,13 @@ span.bal_in_sel_dd_text{
   height: 0;
   position: absolute;
   bottom: 100%;
-  right: 13px;
+  right: 49px;
   border-width: 0 8px 8px 8px;
   border-style: solid;
   border-color: rgba(0,0,0,0.1) transparent;    
+}
+.wrapper-dropdown .dropdown li{
+  margin-bottom: 10px;
 }
 .wrapper-dropdown .dropdown li a {
   display: block;
@@ -388,7 +398,7 @@ span.bal_in_sel_dd_text{
   opacity: 1;
   pointer-events: auto;
 }
-/* end other fance dd */
+/* end other fancy dd */
 
 .title {
   font-size: 48px;
