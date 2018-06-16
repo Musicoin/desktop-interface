@@ -37,13 +37,31 @@
       <div id="wallet_text"><h2>{{echo('profileViewHtml_Tab_Wallet')}}</h2></div>
 
       <div id="bal_in_sel_wrapper">
-        <span id="bal_in_txt">{{echo('profileViewHtml_Table_BALANCE_IN')}}</span>
+        <span id="bal_in_txt">{{echo('profileViewHtml_Table_Balance_in')}}:</span>
         <div id="bal_in_sel">
-	        <span></span>
+	        <span>
+            <img src="/interface/images/icons/musicoin.svg" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_MUSIC')}} />
+            <span class="bal_in_sel_dd_text">{{echo('profileViewHtml_DD_MUSIC')}}</span>
+          </span>
 	        <ul class="dropdown">
-		        <li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
-		        <li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
-		        <li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+		        <li>
+              <span on-tap="displayBalanceInBtc">
+                <img src="/interface/images/icons/bitcoin.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_BTC')}} />
+                <span class="bal_in_sel_dd_text">{{echo('profileViewHtml_DD_BTC')}}</span>
+              </span>
+            </li>
+		        <li>
+              <span on-tap="displayBalanceInUsd">
+                <img src="/interface/images/icons/dollar.png" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_USD')}} />
+                <span class="bal_in_sel_dd_text">{{echo('profileViewHtml_DD_USD')}}</span>
+              </span>
+            </li>
+		        <li>
+              <span on-tap="displayBalanceInMusic">
+                <img src="/interface/images/icons/musicoin.svg" class="clickable" title={{echo('profileViewHtml_Display_Balance_In_MUSIC')}} />
+                <span class="bal_in_sel_dd_text">{{echo('profileViewHtml_DD_MUSIC')}}</span>
+              </span>
+            </li>
 	        </ul>
         </div>
       </div>
@@ -59,9 +77,9 @@
       <div id="mid_right_col" class="clearfix">     
       <table class="acct border_bottom">
         <tr>
-          <th class="th_acc">{{echo('profileViewHtml_Table_ACCOUNT')}}</th>
-          <th class="th_bal">{{echo('profileViewHtml_Table_BALANCE_IN')}}</th>
-          <th class="th_act">{{echo('profileViewHtml_Table_ACTIONS')}}</th>
+          <th class="th_acc">{{echo('profileViewHtml_Table_Account')}}</th>
+          <th class="th_bal">{{echo('profileViewHtml_Table_Balance')}}</th>
+          <th class="th_act">{{echo('profileViewHtml_Table_Actions')}}</th>
         </tr>
         <template is="dom-repeat" items="[[accounts]]" as="account">
           <tr>
@@ -79,15 +97,14 @@
             <td class="account-act th_act">
               <p>
 
-<div class="wrapper-dropdown">
-	<span>&nbsp;</span>
-	<ul class="dropdown">
-		<li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
-		<li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
-		<li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
-	</ul>
-</div>
-
+              <div class="wrapper-dropdown">
+                <span>&#8942;</span>
+                <ul class="dropdown">
+                  <li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
+                  <li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
+                  <li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+                </ul>
+              </div>
 
                 <iron-icon icon="icons:explore" class=clickable title={{echo('profileViewHtml_Show_Account_In_Explorer')}} on-tap="showExplorerWindow"></iron-icon>
                 <iron-icon icon="icons:backup" class=clickable title={{echo('profileViewHtml_Backup_Account')}} on-tap="backupAccount"></iron-icon>
