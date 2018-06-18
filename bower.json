@@ -88,8 +88,5 @@
     "paper-input": "^1.0.0",
     "paper-item": "^1.0.0",
     "webcomponentsjs": "^0.7.24"
-  },
-  "install": {
-    "path": "bower_components"
   }
 }
