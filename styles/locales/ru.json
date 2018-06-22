@@ -1,4 +1,12 @@
 {
+    "profileViewHtml_Table_Account": "Account",
+    "profileViewHtml_Table_Actions": "Actions",
+    "profileViewHtml_Table_Balance": "Balance",
+    "profileViewHtml_Table_Balance_in": "Balance in",
+    "profileViewHtml_DD_MUSIC": "MUSIC",
+    "profileViewHtml_DD_BTC": "BTC",
+    "profileViewHtml_DD_USD": "USD",
+    "profileViewHtml_Show_in_Explorer": "Show in Explorer",
     "profileViewHtml_Tab_Wallet": "Кошелeк",
     "profileViewHtml_Tab_Play_Music": "Музыка",
     "profileViewHtml_Btn_NEW_ACCOUNT": "НОВЫЙ АККАУНТ",
