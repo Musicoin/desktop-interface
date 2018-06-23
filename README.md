@@ -22,4 +22,4 @@ At this point the desktop client should popup and run.  From here on out you sho
 
 ## Screenshot 
 **Note**: *may be slightly out of date*
-![http://srandd.com/mc_desktop_snap.png](http://srandd.com/mc_desktop_snap.png)
+![https://srandd.com/wp-content/uploads/2018/06/Screenshot-from-2018-06-22-21-58-53.png](https://srandd.com/wp-content/uploads/2018/06/Screenshot-from-2018-06-22-21-58-53.png)
