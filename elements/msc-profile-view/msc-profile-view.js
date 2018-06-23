@@ -1239,7 +1239,6 @@ DropDown.prototype = {
     return this.index;
   }
 }
-
 function DropDown2(el) {
   this.dd = el;
   this.placeholder = this.dd.children('span');
@@ -1263,19 +1262,16 @@ DropDown2.prototype = {
     return this.index;
   }
 }
-
-
 $(function() {
   var dd1 = new DropDown( $('#bal_in_sel') );
 //FIXME:run this _after_ accounts are loaded and drawn into the UI, properly, 
-//this is really just a hack..
   setTimeout(function(){ 
     var dds = new DropDown2( $('.wrapper-dropdown') );
   }, 1000); 
 //end FIXME
   $(document).click(function() {
-    // all dropdowns
-    //$('.wrapper-dropdown').removeClass('active'); //is this even necessary?
+    $('.wrapper-dropdown').removeClass('active');
+    $('#bal_in_sel').removeClass('active');
   });
 });
 

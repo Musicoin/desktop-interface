@@ -80,18 +80,18 @@ h2{
 }
 
 .th_acc{
-  width: 52%;
+  width: 55%;
 }
 
 .th_bal{
-  width: 28%;
+  width: 31%;
 }
 
 .th_act{
   width: 12%;
 }
 
-#th_act, .account-act, #th_bal, .account-music, .account-btc, .account-usd{
+.account-act, .account-music, .account-btc, .account-usd{
   padding-left: 20px;
 }
 
@@ -112,17 +112,29 @@ table.acct th{
   text-align: left;
 }
 
+td.account-bal{
+  margin-left: 20px;
+}
+
 table.border_bottom tr {
   border-bottom:1pt solid #46494e !important;
   display: flex;
 }
 
 table.border_bottom td{
-  padding: 20px 0;
+  padding-bottom: 10px;
+  padding-top: 16px;
 }
 
 p.account-address{
-  margin-left: 50px;
+  float: left;
+}
+
+img.copy-icon{
+  position: relative;
+  top: 12px;
+  width: 14px;
+  left: 7px;
 }
 
 #footer_left{
@@ -164,8 +176,8 @@ p.account-address{
   padding-bottom: 60px;
 }
 
-h2.more_accounts{
-  color: #b0b1b3; !important
+h2.more_accts{
+  color: #636768; !important
 }
 
 #left_footer_buttons button {
@@ -310,7 +322,8 @@ span.bal_in_sel_dd_text{
   font-weight: bold;
 }
 .text-icon{
-  font-size: 20px;
+  font-size: 25px;
+  letter-spacing: 8px;
 }
 .wrapper-dropdown:after {
   width: 0;
