@@ -1,25 +1,19 @@
-![Travis](https://img.shields.io/travis/etaletai13/interface.svg?style=for-the-badge)
-![GitHub release](https://img.shields.io/github/release/etaletai13/interface.svg?style=for-the-badge)
 
-# desktop-interface
+[![Travis](https://img.shields.io/travis/etaletai13/desktop-interface.svg?style=for-the-badge)](https://github.com/Musicoin/desktop-interface)
+
+# Musicoin Desktop - Interface Module
 Default UX Module for [Musicoin Desktop Client](https://github.com/Musicoin/desktop)
 
-## Using
-First, clone the main desktop codebase 
-'git clone git@github.com/Musicoin/desktop.git'
-
-Then, in the same directory containing 'desktop', clone this reposistory 
-'git clone git@github.com:movingelectrons/desktop-interface.git'
-
-Remove the line regarding 'interface' under 'dependicies' in 'package.json'
-
-Then you can finally
-'''
-cd desktop && yarn add ../desktop-interface && yarn debug
-'''
+## Contributing
+1. First, clone the main desktop codebase and this module.
+    1. `git clone git@github.com:Musicoin/desktop.git`
+    2. `git clone git@github.com:Musicoin/desktop-interface.git`
+2. Second, change the dependency location in the main app.
+    1. (substitute `vim` for your preference) `vim desktop/package.json`
+    2. Find `"interface": "github:Musicoin/desktop-interface"` to `"interface": "../desktop-interface"
+3. Third, make your changes to the interface module, and test according to [Musicoin Instructions(https://github.com/Musicoin/desktop).
 
 At this point the desktop client should popup and run.  From here on out you should be able to run 'yarn debug' to see the desktop client in action.
 
 ## Screenshot 
-**Note**: *may be slightly out of date*
 ![https://srandd.com/wp-content/uploads/2018/06/Screenshot-from-2018-06-22-21-58-53.png](https://srandd.com/wp-content/uploads/2018/06/Screenshot-from-2018-06-22-21-58-53.png)

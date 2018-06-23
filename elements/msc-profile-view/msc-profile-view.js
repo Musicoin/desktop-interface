@@ -1020,7 +1020,7 @@ Polymer({
 
     var menu = new nw.Menu({ type: 'menubar' });
     if (platform.includes("darwin")) {
-      menu.createMacBuiltin('Musicoin-wallet',{hideEdit: true, hideWindow: true});
+      menu.createMacBuiltin('Musicoin',{hideEdit: false, hideWindow: true});
       } else {}
     var account = new nw.Menu();
 
