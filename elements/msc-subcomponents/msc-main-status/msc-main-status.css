@@ -1,25 +1,14 @@
 
+#bottom_status_elements{
+  padding-bottom: 35px;
+}
+
 .mainStatus {
-
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.blocks { margin-top: 5px; margin-bottom: 2px; }
-
-#lastBlock {
-    float: left;
+#peers, .syncStatus {
+  margin-left: 20px;
 }
-
-#blockNumber {
-    margin-right: 10px;
-}
-
-#chainVersion {}
-
-.syncStatus {}
-
-.syncStatus div {
-    float: left;
-}
-
-#peers { justify-content: unset }
 
