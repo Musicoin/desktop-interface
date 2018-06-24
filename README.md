@@ -13,8 +13,7 @@ Default UX Module for [Musicoin Desktop Client](https://github.com/Musicoin/desk
     2. Find `"interface": "github:Musicoin/desktop-interface"` to `"interface": "../desktop-interface"
 3. Third, make your changes to the interface module, and test according to [Musicoin Instructions(https://github.com/Musicoin/desktop).
 
-
 At this point the desktop client should popup and run.  From here on out you should be able to run 'yarn debug' to see the desktop client in action.
 
 ## Screenshot 
-![https://spee.ch/d/v1-5-0.png](https://spee.ch/d/v1-5-0.png)
+![https://srandd.com/wp-content/uploads/2018/06/Screenshot-from-2018-06-22-21-58-53.png](https://srandd.com/wp-content/uploads/2018/06/Screenshot-from-2018-06-22-21-58-53.png)
