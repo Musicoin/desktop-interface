@@ -10,7 +10,7 @@
 }
 
 *{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 h2{
@@ -22,16 +22,9 @@ h2{
   padding: 5px;
 }
 
-#left_col{
-  background-color: #272a30;
-  width: 13%;
-  float: left;
-  padding-left: 25px;
-  padding-right: 20px;
-}
-
 #image_banner{
   width: 100%;
+  margin-top: 20px;
 }
 
 #left_col button{
@@ -54,10 +47,16 @@ h2{
 }
 
 #right_col{
-  background-color: #2b2e34;
-  width: 78%;
-  float: right;
-  padding-left: 25px;
+  color: black;
+  margin-left: 10px;
+  background: url('../../images/bg.jpg') no-repeat center center fixed;
+  /*Photo courtest: Louise Hill on Unsplash */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding: 70px 20px 20px 20px;
 }
 
 .avatar {
@@ -67,8 +66,9 @@ h2{
 
 .account-address {
   font-size: 14px;
-  color: #b0b1b3;
+  color: #D8DBDF;
   padding-left:10px;
+  margin: 0 auto;
 }
 
 .account-bal{
@@ -97,12 +97,12 @@ h2{
 
 .account-music, .account-btc, .account-usd {
   font-size: 14px;
-  color: #b0b1b3;
+  color: #D8DBDF;
   font-weight: bold;
 }
 
 table.border_bottom {
-  color: #5d5f63;
+  color: white;
   font-size: 12px;
   font-weight: 700;
   width:100%;
@@ -122,8 +122,7 @@ table.border_bottom tr {
 }
 
 table.border_bottom td{
-  padding-bottom: 10px;
-  padding-top: 16px;
+  padding-top: 4px;
 }
 
 p.account-address{
@@ -132,14 +131,12 @@ p.account-address{
 
 img.copy-icon{
   position: relative;
-  top: 12px;
-  width: 14px;
   left: 7px;
 }
 
 #footer_left{
-  position: absolute;
   bottom: 30px;
+  padding-top: 20px;
 }
 
 #footer_left, #footer_right{
@@ -201,28 +198,33 @@ h2.more_accts{
 #bal_in_sel_wrapper{
   float:right;
 }
+
 span.bal_in_sel_dd_text{
   position: relative;
   top: -3px;
 }
+
 #bal_in_txt{
   float:left;
-  color: #5d5f63;
+  color: white;
   font-size: 12px;
   position: relative;
   top: 12px;
   left: 7px;
 }
+
 #bal_in_sel{
   float:right;
   padding-top:10px;
   width:auto;
   height:auto;
 }
+
 #bal_in_sel img{
-  width:18px; 
+  width:18px;
   margin-left: 6px;
 }
+
 #bal_in_sel {
   position: relative;
   width: 100px;
@@ -233,18 +235,7 @@ span.bal_in_sel_dd_text{
   font-weight: bold;
   color: #FAFAFA;
 }
-#bal_in_sel:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  margin-top: -3px;
-  border-width: 6px 6px 0 6px;
-  border-style: solid;
-  border-color: #8aa8bd transparent;
-}
+
 #bal_in_sel .dropdown {
   position: absolute;
   top: 140%;
@@ -264,6 +255,7 @@ span.bal_in_sel_dd_text{
   z-index: 1;
   pointer-events: none;
 }
+
 #bal_in_sel .dropdown:after {
   content: "";
   width: 0;
@@ -273,8 +265,9 @@ span.bal_in_sel_dd_text{
   right: 15px;
   border-width: 0 6px 6px 6px;
   border-style: solid;
-  border-color: #fff transparent;    
+  border-color: #fff transparent;
 }
+
 #bal_in_sel .dropdown:before {
   content: "";
   width: 0;
@@ -284,8 +277,9 @@ span.bal_in_sel_dd_text{
   right: 13px;
   border-width: 0 8px 8px 8px;
   border-style: solid;
-  border-color: rgba(0,0,0,0.1) transparent;    
+  border-color: rgba(0,0,0,0.1) transparent;
 }
+
 #bal_in_sel .dropdown li {
   display: block;
   padding: 10px;
@@ -295,21 +289,31 @@ span.bal_in_sel_dd_text{
   box-shadow: inset 0 1px 0 rgba(255,255,255,1);
   transition: all 0.3s ease-out;
 }
+
 #bal_in_sel .dropdown li i {
   float: right;
   color: inherit;
 }
+
 #bal_in_sel .dropdown li:first-of-type {
   border-radius: 7px 7px 0 0;
 }
+
 #bal_in_sel .dropdown li:last-of-type {
   border: none;
   border-radius: 0 0 7px 7px;
 }
+
 /* Hover state */
 #bal_in_sel .dropdown li:hover {
   background: #f3f8f8;
 }
+
+.right {
+  float: right;
+  padding: 0 4px 4px 0;
+}
+
 /* Active state */
 #bal_in_sel.active .dropdown {
   opacity: 1;
@@ -366,7 +370,7 @@ span.bal_in_sel_dd_text{
   right: 51px;
   border-width: 0 6px 6px 6px;
   border-style: solid;
-  border-color: #343C41 transparent;    
+  border-color: #343C41 transparent;
 }
 .wrapper-dropdown .dropdown:before {
   content: "";
@@ -377,7 +381,7 @@ span.bal_in_sel_dd_text{
   right: 49px;
   border-width: 0 8px 8px 8px;
   border-style: solid;
-  border-color: rgba(0,0,0,0.1) transparent;    
+  border-color: rgba(0,0,0,0.1) transparent;
 }
 .wrapper-dropdown .dropdown li{
   margin-bottom: 10px;
@@ -554,6 +558,10 @@ tr[coinbase] {
 
 .flex-top {
   display: flex;
+  position: absolute;
+  top: 0;
+  width: 98%;
+  justify-content: center;
   z-index: 1000;
 }
 
@@ -564,7 +572,12 @@ tr[coinbase] {
 }
 
 paper-dialog {
-  background-color: rgb(36, 36, 36);
+  background-color: black !important;
+  opacity: 0.9;
+}
+
+.paper-dialog-0 .buttons {
+  color: white !important;
 }
 
 .warn {
@@ -582,14 +595,19 @@ paper-dialog {
   border-radius: 5px;
 }
 
+.buttons-style-old {
+  font-weight: 900 !important;
+  font-size: 13px;
+  border-radius: 5px;
+  position: absolute;
+  right: 1.5%;
+  padding-top: 10px;
+}
+
 #new-account {
-  background: #fad644;
-  color: #302d38;
 }
 
 #old-wallet {
-  background: #fff;
-  color: #302d38;
 }
 
 #private-key {
@@ -603,13 +621,9 @@ paper-dialog {
 }
 
 #approve-remove {
-  background: #da7c45;
-  color: #302d38;
 }
 
 #send-funds {
-  background: #f19ff7;
-  color: #302d38;
 }
 
 #save-paper {
@@ -659,8 +673,40 @@ paper-dialog {
   font-weight: 900 !important;
 }
 
+.tab button {
+  background-color: #272a30;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 700 !important;
+  border: 1px solid #f2c455;
+}
+
+.tab button:hover {
+  background-color: #737373;
+}
+
+.tab button.active {
+  background-color: #272a30;
+}
+
 .tabcontent {
   display: none;
+}
+
+#status {
+  padding-top: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  justify-content: center;
+  text-align: center;
+  color: lightgrey;
+  word-wrap: break-word;
+}
+
+.top-buttons {
+  top: 35px;
 }
 
 #mPlayer {
@@ -671,4 +717,36 @@ paper-dialog {
   left: 0;
   width:100%;
   height:100%;
+}
+
+.spl-button {
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 0 26px;
+  min-height: 3em;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+  font-size: 12px;
+  line-height: 1;
+  margin-left: 24px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+
+.spl-button:hover,
+.spl-button:focus {
+  background-color: #fff ;
+  color: #171717 !important;
+}
+
+a {
+  color: white;
+}
+
+.wrapper-dropdown.msc-profile-view .dropdown.msc-profile-view {
+  background: : black !important;
+  color: #D8DBDF;
 }
